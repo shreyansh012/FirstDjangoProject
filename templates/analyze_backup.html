@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyzing your text...</title>
+</head>
+<body>
+<h1>Your analyzed text - {{ analyzed_text }}</h1>
+<p>
+    {% for item in purpose %}
+    {{ item }}
+    <br>
+    {% endfor %}
+</p>
+<p>
+    {% if length %}
+    Total Character length is {{ length }}
+    {% endif %}
+</p>
+</body>
+</html>
